@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+body
+{
+    font-family: 'Russo One', sans-serif;
+    background-image: url("../img/background.jpg");
+    background-position: fixed;
+    background-repeat: repeat;
+    text-align: center;
+    background-color: black;
+    height: 1000px;
+    /* position: relative; */
+    bottom: 20px;
+
+}
+    
+li{
+    text-transform: uppercase;
+    list-style: none; 
+    /* font-variant: small-caps; */
+}
+
+main{
+
+    display: flex;
+    height: 300px;
+    
+}
+
+.vert{
+    width: 0.7em;
+    font-size: 5em;
+    word-wrap: break-word;
+    text-align: center;
+    letter-spacing: 7px;
+    margin: 0;
+    padding:0;
+    line-height: 75px;
+    font-weight: 700;
+}
+
+.teams{
+    margin: 0px  auto 25px auto;
+    background: rgb(29, 28, 28);
+    border: solid 5px rgba(85, 42, 42, 0.5);
+    height: 275px;
+    width: 70%;
+    text-align: left;
+    line-height: 2rem;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-around;
+    background-clip: padding-box;
+
+}
+
+.eastTeams{
+
+    color: rgb(2, 177, 244);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 10px 0;
+    letter-spacing: 0.2rem;
+}
+
+.westTeams{
+    color: rgb(250, 230, 47);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 10px 0;
+    letter-spacing: 0.1rem;
+}
+
+.vert.left{
+
+    
+    color: rgb(246,226, 53);
+    text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+    position:relative;
+    left: 130px;
+
+
+}
+
+.vert.right{
+
+    
+    color: rgba(0, 115, 160);
+    text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+    position:relative;
+    right: 150px;
+
+
+}
+
+li:hover{
+    background-color:rgba(255, 102, 0, .8);
+
+
+}
+
+ul.eastTeams li:hover{
+    background-color: rgb(231, 252, 138, .8);
+}
+
+.hidden{
+
+    display: none;
+}
+
+section img{
+    width: 500px;
+    height: 346px;
+    position:relative;
+    bottom: 10px;
+}
+
+header{
+
+    justify-content: center;
+    height: 175px;
+    margin: 0;
+    padding: 0;
+
+}
+
+header img{
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 500px;
+}
+
+
+audio{
+    display: none;
+}
+
+/* @media screen and (max-width: 768px) {
+    .vert.left{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .teams ul{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .westTeams{
+        
+      
+    }
+
+
+
+    .vert{
+        
+        font-size: 5em;
+        word-wrap: break-word;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 0;
+        padding:0;
+        width: 30px;
+    }
+} */
