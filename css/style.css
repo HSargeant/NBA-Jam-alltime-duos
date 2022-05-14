@@ -108,8 +108,8 @@ ul.eastTeams li:hover{
 }
 
 section img{
-    width: 500px;
-    height: 346px;
+    /* width: 500px; */
+    max-height: 346px;
     position:relative;
     bottom: 10px;
 }
@@ -133,6 +133,42 @@ audio{
     display: none;
 }
 
+
+
+
+
+
+
+
+@media screen and (max-width: 1372px) {
+    .vert.left{
+        left: 80px;
+    }
+
+    .vert.right{
+        right: 80px;
+    }
+    
+    .teams ul{
+        font-size: 0.7em;
+        position: relative; 
+        left: -10px;
+    }
+    
+}
+
+@media screen and (max-width: 1074px) {
+
+    
+    .teams ul li{
+        font-size: 0.6em;
+        padding: 0;
+        line-height: 25px;
+        
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     .vert.left{
         left: 40px;
@@ -142,13 +178,9 @@ audio{
     .vert.right{
         right: 45px;
     }
-    body{
-        /* top: -30px; */
-    }
-
 
     .teams ul{
-        font-size: 0.6em;
+        font-size: 0.5em;
         line-height: 25px;
         position: relative;
         left: -30px;
@@ -183,10 +215,9 @@ audio{
 @media screen and (max-width: 480px) {
     .vert.left{
         position: relative;
-        right: 400px;
-        margin:0;
-        padding: 0;
-        display: block;    
+
+        left: 10px;
+       
     }
 
     .teams{
@@ -201,17 +232,20 @@ audio{
     }
 
     .vert.right{
-        position: fixed;
-        left: 380px;
+        position: relative;
+        right: 5px;
     }
 
    .westTeams, .eastTeams{
-       padding: 10px;
+   }
+
+   .teams{
+       width: 400px;
    }
 
     .teams ul li{
-        font-size: 0.6em;
-        line-height: 20px;
+        font-size: 8px;
+        line-height: 15px;
     }
 
     section.teamImg img{
@@ -220,27 +254,8 @@ audio{
         align-items: center;
     }
 
-    main{
-        align-items: center;
-        justify-content: center;
-    }
+ 
  
 }
 
 
-@media screen and (max-width: 1024px) {
-    .vert.left{
-        left: 45px;
-    }
-
-    .vert.right{
-        right: 45px;
-    }
-    
-    .teams ul{
-        font-size: 0.6em;
-        position: relative; 
-        left: -10px;
-    }
-    
-}
