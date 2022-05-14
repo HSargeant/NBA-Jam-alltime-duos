@@ -4,7 +4,6 @@ let arr = Array.from(teams)
 arr.forEach(element => element.addEventListener('mouseover', teamPick))
 console.log(Array.from(teams))
 
-
 function teamPick (mouseover){
 
     if(arr.includes(mouseover.target)){

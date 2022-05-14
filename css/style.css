@@ -13,8 +13,6 @@ body
     position: relative;
     bottom: 20px;
     overflow: hidden;
-
-
 }
     
 li{
@@ -133,13 +131,6 @@ audio{
     display: none;
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width: 1372px) {
     .vert.left{
         left: 80px;
@@ -253,9 +244,4 @@ audio{
         height: 60%;
         align-items: center;
     }
-
- 
- 
 }
-
-
