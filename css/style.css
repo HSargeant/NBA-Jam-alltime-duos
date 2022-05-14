@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
 body
 {
     font-family: 'Russo One', sans-serif;
@@ -12,9 +10,10 @@ body
     background-repeat: repeat;
     text-align: center;
     background-color: black;
-    height: 1000px;
-    /* position: relative; */
+    position: relative;
     bottom: 20px;
+    overflow: hidden;
+
 
 }
     
@@ -66,7 +65,7 @@ main{
     flex-direction: column;
     width: 25%;
     margin: 10px 0;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 
 .westTeams{
@@ -80,33 +79,23 @@ main{
 }
 
 .vert.left{
-
-    
     color: rgb(246,226, 53);
     text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.5);
     font-family: sans-serif;
     position:relative;
     left: 130px;
-
-
 }
 
 .vert.right{
-
-    
     color: rgba(0, 115, 160);
     text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.5);
     font-family: sans-serif;
     position:relative;
     right: 150px;
-
-
 }
 
 li:hover{
     background-color:rgba(255, 102, 0, .8);
-
-
 }
 
 ul.eastTeams li:hover{
@@ -126,12 +115,10 @@ section img{
 }
 
 header{
-
     justify-content: center;
     height: 175px;
     margin: 0;
     padding: 0;
-
 }
 
 header img{
@@ -146,34 +133,114 @@ audio{
     display: none;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .vert.left{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        left: 40px;
+        
+    }
+
+    .vert.right{
+        right: 45px;
+    }
+    body{
+        /* top: -30px; */
     }
 
 
     .teams ul{
-        display: flex;
-        flex-direction: row;
-
+        font-size: 0.6em;
+        line-height: 25px;
+        position: relative;
+        left: -30px;
     }
-    .westTeams{
-        
-      
-    }
-
-
 
     .vert{
         
-        font-size: 5em;
-        word-wrap: break-word;
-        text-align: center;
-        letter-spacing: 1px;
-        margin: 0;
-        padding:0;
-        width: 30px;
+        font-size: 3em;
+     
     }
-} */
+
+    header{
+        height: 125px;
+ 
+    }
+
+    header img{
+        height: 120px;
+        width: 300px;
+    }
+
+    section.teamImg img{
+
+        align-items: center;
+
+    }
+    .teams{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .vert.left{
+        position: relative;
+        right: 400px;
+        margin:0;
+        padding: 0;
+        display: block;    
+    }
+
+    .teams{
+        width: 66%;
+
+    }
+
+    .vert{
+        width: 0.7em;
+        font-size: 2.5em;
+        line-height: 65px;
+    }
+
+    .vert.right{
+        position: fixed;
+        left: 380px;
+    }
+
+   .westTeams, .eastTeams{
+       padding: 10px;
+   }
+
+    .teams ul li{
+        font-size: 0.6em;
+        line-height: 20px;
+    }
+
+    section.teamImg img{
+        width: 60%;
+        height: 60%;
+        align-items: center;
+    }
+
+    main{
+        align-items: center;
+        justify-content: center;
+    }
+ 
+}
+
+
+@media screen and (max-width: 1024px) {
+    .vert.left{
+        left: 45px;
+    }
+
+    .vert.right{
+        right: 45px;
+    }
+    
+    .teams ul{
+        font-size: 0.6em;
+        position: relative; 
+        left: -10px;
+    }
+    
+}
