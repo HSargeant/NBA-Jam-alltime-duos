@@ -11,7 +11,7 @@ body
     text-align: center;
     background-color: black;
     position: relative;
-    bottom: 20px;
+    /* bottom: 20px; */
     overflow: hidden;
 }
     
@@ -24,7 +24,7 @@ li{
 main{
 
     display: flex;
-    height: 300px;
+    height: auto;
     
 }
 
@@ -44,7 +44,7 @@ main{
     margin: 0px  auto 25px auto;
     background: rgb(29, 28, 28);
     border: solid 5px rgba(85, 42, 42, 0.5);
-    height: 275px;
+    height: auto;
     width: 70%;
     text-align: left;
     line-height: 2rem;
@@ -128,7 +128,7 @@ header img{
 
 
 audio{
-    display: none;
+    display: block;
 }
 
 @media screen and (max-width: 1372px) {
@@ -145,6 +145,7 @@ audio{
         position: relative; 
         left: -10px;
     }
+
     
 }
 
@@ -152,11 +153,12 @@ audio{
 
     
     .teams ul li{
-        font-size: 0.6em;
+        font-size: 0.8em;
         padding: 0;
         line-height: 25px;
         
     }
+
     
 }
 
@@ -169,13 +171,17 @@ audio{
     .vert.right{
         right: 45px;
     }
+    .teams ul li{
+        font-size: .6em;
+    }
 
     .teams ul{
-        font-size: 0.5em;
+        font-size: 1em;
         line-height: 25px;
         position: relative;
         left: -30px;
     }
+    
 
     .vert{
         
@@ -205,14 +211,12 @@ audio{
 
 @media screen and (max-width: 480px) {
     .vert.left{
-        position: relative;
-
-        left: 10px;
+    display: none;
        
     }
 
     .teams{
-        width: 66%;
+        width: 100%;
 
     }
 
@@ -223,19 +227,14 @@ audio{
     }
 
     .vert.right{
-        position: relative;
-        right: 5px;
+      display: none;
     }
 
    .westTeams, .eastTeams{
    }
 
-   .teams{
-       width: 400px;
-   }
-
     .teams ul li{
-        font-size: 8px;
+        font-size: 7px;
         line-height: 15px;
     }
 
@@ -244,4 +243,6 @@ audio{
         height: 60%;
         align-items: center;
     }
+ 
+  
 }
