@@ -11,7 +11,7 @@ body
     text-align: center;
     background-color: black;
     position: relative;
-    bottom: 40px;
+    bottom: 35px;
     overflow: hidden;
 }
     
@@ -113,6 +113,8 @@ section img{
 }
 
 header{
+    display: flex;
+    align-items: center;
     justify-content: center;
     height: 175px;
     margin: 0;
@@ -125,14 +127,21 @@ header img{
     height: 200px;
     width: 500px;
 }
+.audioPlayer{
+    /* position: relative; */
+    /* top:50px;
+    right:10px; */
+    /* float:right; */
 
+}
 
-audio{
+/* audio{
     position: absolute;
     top:50px;
     right:0;
     background-color: transparent;
-}
+} */
+
 
 @media screen and (max-width: 1372px) {
     .vert.left{
@@ -198,7 +207,7 @@ audio{
     }
 
     header img{
-        height: 120px;
+        height: 150px;
         width: 300px;
     }
 
